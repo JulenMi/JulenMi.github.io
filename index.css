@@ -1,0 +1,270 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Asigna una fuente de tipografía elegante al texto */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilo para la cabecera */
+header {
+    background: linear-gradient(to right, #FFEBB7, #FF6E31);
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+/* Estilo del titulo*/
+.navbar-brand {
+  color: #243763;
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    background-color: #AD8E70;
+    padding: 10px 0;
+    border-radius: 2px;
+}
+
+/* Estilo para los elementos de navegación */
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-item {
+    list-style: none;
+    margin-left: 20px;
+}
+.nav-link {
+    text-decoration: none;
+    color: #FFEBB7;
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+}
+.nav-link:hover {
+    color: #999;
+}
+
+/* Estilo para la sección de imagen de hero */
+.hero-image {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.hero-text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.hero-text h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #FFEBB7;
+}
+.hero-text p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #FFEBB7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #AD8E70;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.cta-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.container{
+padding: 10px;
+/* display: flex;
+justify-content: center;*/
+}
+
+/* Estilo para el menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+    margin-top:50px;
+}
+.menu .card {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #FFEBB7, #FFEBB7);
+    color: #000000;
+} 
+.img {
+    width: 175px;
+    height: 175px;
+    border-radius: 10px;
+}
+
+/* Estilo para la sección de "Acerca de nosotros" */
+.about {
+    padding: 50px 0;
+    background: linear-gradient(to right, #FFEBB7, #FF6E31);
+    border-radius: 10px;
+}
+.about .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about .about-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+    margin-top:50px;
+}
+
+/* Estilo para el formulario de contacto */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Estilo para los inputs y etiquetas del formulario */
+  .contact form label,
+  .contact form input,
+  .contact form textarea {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #FFEBB7;
+  }
+  
+  /* Estilo para el botón de envío */
+  .contact form input[type="submit"] {
+    background-color: #AD8E70;
+    color: #F6F2D4;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+/* Estilo para el footer */
+footer {
+    background-color: #AD8E70;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Horarios */
+.schedule-weekdays {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #FFEBB7, #FF6E31);
+  color: #333333;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.schedule-weekend {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #FFEBB7, #FF6E31);
+  color: #333333;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+
+.schedule-day {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+  color: black;
+}
+
+.schedule-day:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #FFEBB7, #AD8E70);
+  color: #333333;
+}
+
+/* Asigna un estilo al contenedor del mapa */
+.map-wrapper {
+    background: linear-gradient(to right, #fff, #fff);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Asigna un estilo al mapa */
+  .map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Asigna un estilo al texto de información */
+  .info {
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Estilo para los iconos de redes sociales */
+.contact .social-links i {
+    font-size: 36px; /* Tamaño del icono */
+    color: #243763; /* Color del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+  }
+  
+  /* Estilo para los enlaces de redes sociales */
+  .contact .social-links a {
+    color: #243763; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+/*h1{color: #ff8830;}*/
+

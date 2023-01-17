@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="elestilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Costilla Colimeña</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1 class="navbar-brand">LA COSTILLA COLIMEÑA</h1>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Acerca de nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero-image">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>Ven y disfruta de nuestra deliciosa comida</h1>
+                    <p>Ofrecemos platos frescos y deliciosos preparados con ingredientes de alta calidad.</p>
+                    <a href="#menu" class="cta-btn">Ver menú</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <h2>Menu</h2>
+    <section id="menu" class="menu">
+        <div class="card">
+          <h3>PARRILLADA PERSONAL</h3>
+            <img src="Parrillada Personal.jpg" class="img">
+          <p class="card-text">Date un merecido premio y disfruta de esta parrillada personal </p>
+          <p class="price">$4.00</p>
+        </div>
+        <div class="card">
+          <h3>PARRILLADA MEDIANA</h3>
+            <img src="Parrillada Mediana.jpg" class="img">
+          <p class="card-text">Disfruta con tus amigos mas sercanos junto a esta parrillada  </p>
+          <p class="price">$8.50</p>
+        </div>
+        <div class="card">
+          <h3>PARRILLADA DE LA CASA</h3>
+            <img src="Parrillada de la Casa.jpg" class="img">
+            <p class="card-text">Disfruta con toda la familia y crea recuerdos inmemorables compartiendo una parrillada</p>
+            <p class="price">$12.00</p>
+          </div>
+      </section>
+      <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Acerca de nosotros</h2>
+            <p class="about-text">Somos un pequeño restaurante familiar que se dedica a ofrecer comida deliciosa y servicio amigable. Trabajamos con ingredientes frescos y de alta calidad para garantizar la satisfacción de nuestros clientes.</p>
+        </div>
+    </section>
+<section class="location">
+  <h2>Ubicación</h2>
+  <div class="map-wrapper">
+    <iframe
+      width="100%"
+      height="500"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.362689513472!2d-80.01189302196828!3d-1.5477467384424575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902cf518e2f027e3%3A0x3e9fd4acc1266e45!2sHelader%C3%ADa%20%22Colime%C3%B1a%22%20frozen%20yogurt!5e0!3m2!1ses-419!2sec!4v1673796378785!5m2!1ses-419!2sec" allowfullscreen>
+    </iframe>
+    <div class="info">
+      <p>Nuestro restaurante se encuentra cerca al registro civil.</p>
+      <p>Dirección: Calle Santa Rosa, Colimes, Ecuador</p>
+      <p>Teléfono: +593 924567890</p>
+    </div>
+  </div>
+</section>
+    <section class="hours">
+      <h2>Horario de Atención</h2>
+    <div class="schedule-weekdays">
+        <div class="schedule-day">
+            <div>Lunes</div>
+            <div>8:00 - 23:00</div>
+        </div>
+        <div class="schedule-day">
+            <div>Martes</div>
+            <div>8:00 - 23:00</div>
+        </div>
+        <div class="schedule-day">
+            <div>Miércoles</div>
+            <div>8:00 - 23:00</div>
+        </div>
+        <div class="schedule-day">
+            <div>Jueves</div>
+            <div>8:00 - 23:00</div>
+        </div>
+        <div class="schedule-day">
+            <div>Viernes</div>
+            <div>8:00 - 23:00</div>
+        </div>
+    </div>
+    
+    <div class="schedule-weekend">
+        <div class="schedule-day">
+            <div>Sábado</div>
+            <div>9:00 - 24:00</div>
+        </div>
+        <div class="schedule-day">
+            <div>Domingo</div>
+            <div>9:00 - 22:00</div>
+        </div>
+    </div>
+      </section>
+           
+      <section class="contact">
+        <h2>Contacto</h2>
+        <form action="enviar_mensaje.php" method="post">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Enviar">
+        </form>
+        <div class="info">
+          <p>Síguenos en nuestras redes sociales:</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/costilla.colimena"><i class="fab fa-facebook-square"></i>Facebook</a>
+            <a href="https://www.instagram.com/lacostillacolimena/"><i class="fab fa-instagram"></i>Instagram</a>
+        </div>
+    </div>
+</section>
+    
+            <footer>
+                <div class="container">
+                    <p>LOS VAGOS &copy; La Costilla Colimeña</p>
+                </div>
+            </footer>
+            </body>
+            </html>
